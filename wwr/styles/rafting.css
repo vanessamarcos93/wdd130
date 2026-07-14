@@ -16,7 +16,7 @@
 
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color);
+    color: var(--dark-color);
 }
 
 header,
@@ -52,7 +52,7 @@ nav {
 }
 
 nav a {
-    color: var(--accent2-color);
+    color: var(--secondary-color);
     padding: 10px;
     display: block;
     text-decoration: none;
@@ -89,7 +89,7 @@ nav a {
     top: 20px;
     width: 100%;
     text-align: center;
-    color: white;
+    color: var(--accent-color);
     background-color: rgba(0, 0, 0, 0.45);
     padding: 10px;
 }
