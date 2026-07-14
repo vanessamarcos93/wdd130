@@ -1,0 +1,116 @@
+:root {
+    --primary-color: #123c52;
+    --secondary-color: #d9edf2;
+    --accent-color: #f4a261;
+    --dark-color: #081c24;
+    --heading-font: "Georgia", "Times New Roman", serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+/* Reset CSS box-model */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Headings */
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+nav {
+    background-color: var(--primary-color);
+    padding: 10px;
+}
+
+nav a {
+    color: var(--accent2-color);
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.socialmedia {
+    display: flex;
+    /*icons next to each other*/
+    justify-content: center;
+    gap: 20px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 40px;
+    height: 40px;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.45);
+    padding: 10px;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 40px;
+    left: 80px;
+    right: 80px;
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 25px;
+}
+
+.hero article img {
+    width: 150px;
+    height: auto;
+    float: right;
+    margin-left: 20px;
+}
+
+.hero article p {
+    font-size: 18px;
+    line-height: 1.4;
+}
