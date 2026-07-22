@@ -26,6 +26,21 @@ footer {
     margin: 0 auto;
 }
 
+/* One column for the logo and the rest for the nav*/
+header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    background-color: var(--secondary-color);
+    padding: 15px 20px;
+}
+
+header img {
+    width: 120px;
+    height: auto;
+    justify-self: center;
+}
+
 main {
     max-width: 1000px;
     margin: 0 auto;
@@ -48,7 +63,9 @@ article {
 
 nav {
     background-color: var(--primary-color);
-    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
@@ -58,11 +75,32 @@ nav a {
     text-decoration: none;
 }
 
+nav a:hover {
+    background-color: var(--accent-color);
+    color: var(--dark-color);
+    border-radius: 4px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: var(--primary-color);
+}
+
+footer p {
+    margin: 0;
+    color: var(--secondary-color);
+}
+
 .socialmedia {
     display: flex;
-    /*icons next to each other*/
-    justify-content: center;
-    gap: 20px;
+    gap: 15px;
+    background: none;
+    /* removes the nav background */
+    margin: 0;
+    padding: 0;
 }
 
 .socialmedia a {
@@ -70,8 +108,9 @@ nav a {
 }
 
 .socialmedia img {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
+    display: block;
 }
 
 .hero {
@@ -113,4 +152,58 @@ nav a {
 .hero article p {
     font-size: 18px;
     line-height: 1.4;
+}
+
+.history {
+    text-align: center;
+    padding: 20px;
+}
+
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 220px 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.history-content img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    justify-self: center;
+}
+
+.history-content p {
+    text-align: left;
+    margin: 0;
+}
+
+.adventure {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.adventure-figures {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    align-items: start;
+}
+
+.adventure-figures figure {
+    margin: 0;
+}
+
+.adventure-figures img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.adventure-figures figcaption {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--primary-color);
 }
