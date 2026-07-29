@@ -207,3 +207,135 @@ footer p {
     font-weight: bold;
     color: var(--primary-color);
 }
+
+/* CONTACT PAGE */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: start;
+    margin: 40px 0;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 420px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: var(--primary-color);
+    margin: 30px 0;
+    font-size: 2.5rem;
+}
+
+.contact-info {
+    text-align: center;
+    background-color: var(--secondary-color);
+    padding: 20px;
+    margin: 20px auto 40px;
+    border-radius: 8px;
+    max-width: 700px;
+}
+
+.contact-info p {
+    margin: 8px 0;
+    font-size: 1.1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background-color: var(--secondary-color);
+    padding: 25px;
+    border-radius: 8px;
+}
+
+form label {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 15px;
+}
+
+fieldset label {
+    display: block;
+    margin: 8px 0;
+    font-weight: normal;
+}
+
+.newsletter {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: normal;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: var(--accent1-color);
+}
+
+.employees {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.employees-pictures {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    align-items: start;
+}
+
+.employees-pictures figure {
+    margin: 0;
+}
+
+.employees-pictures img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.employees-pictures figcaption {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
