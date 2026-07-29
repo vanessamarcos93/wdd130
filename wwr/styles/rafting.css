@@ -261,6 +261,21 @@ form label {
     color: var(--primary-color);
 }
 
+.form-row {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 15px;
+    align-items: start;
+    margin-bottom: 15px;
+}
+
+.purpose-label {
+    font-weight: bold;
+    color: var(--primary-color);
+    align-self: start;
+    margin-top: 8px;
+}
+
 form input[type="text"],
 form input[type="email"],
 form textarea {
@@ -277,9 +292,9 @@ form textarea {
 }
 
 fieldset {
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    padding: 15px;
+    border: none;
+    padding: 0;
+    margin: 0;
 }
 
 fieldset label {
@@ -292,7 +307,7 @@ fieldset div {
     display: flex;
     align-items: center;
     gap: 8px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .checkbox-newsletter {
