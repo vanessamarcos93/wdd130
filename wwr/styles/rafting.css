@@ -295,6 +295,18 @@ fieldset div {
     margin-bottom: 10px;
 }
 
+.checkbox-newsletter {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.checkbox-newsletter label {
+    font-weight: normal;
+    color: var(--primary-color);
+}
+
 .newsletter {
     display: flex;
     align-items: center;
