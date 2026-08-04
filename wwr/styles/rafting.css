@@ -137,6 +137,22 @@ footer p {
     background: none;
 }
 
+.home-hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: var(--heading-font);
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, .8);
+    background: rgba(0, 0, 0, 0.35);
+    padding: 15px 30px;
+    border-radius: 8px;
+}
+
 .hero article {
     position: absolute;
     bottom: 40px;
@@ -433,4 +449,34 @@ button:hover {
 .button:hover {
     background-color: var(--accent-color);
     color: var(--dark-color);
+}
+
+/* TRIPS */
+.trip {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.trip-image {
+    flex: 0 0 40%;
+}
+
+.trip-image img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.trip-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.trip-content .button {
+    align-self: flex-end;
+    width: fit-content;
 }
